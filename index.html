@@ -24,7 +24,8 @@
   </div>
   <p>Every notification has a fadeout output of 4 seconds after triggered automatically.</p>
   <h1>How to use?</h1>
-  <p>First, you need jQuery.js and toastem.js scripts in your project.</p>
+  <p>First, you need jQuery.js, toastem.js scripts and toastem.css in your project.</p>
+  <p><code>&lt;link href="toastem.css"&gt;</code></p>
   <p><code>&lt;script src="jquery.min.js"&gt;&lt;script&gt;</code></p>
   <p><code>&lt;script src="toastem.js"&gt;&lt;script&gt;</code></p>
   <p>Then, you need to set: <code>&lt;div id="toastem"&gt;&lt;/div&gt;</code> to your project. This is where your notifications will render.</p>
@@ -33,7 +34,10 @@
   <p><code>toastem.normal()</code></p>
   <p><code>toastem.success()</code></p>
   <p><code>toastem.error()</code></p>
-  <br>
+  <p>To trigger the alert you must call it from any element with the correct id:</p>
+  <p><code>id="normal-alert"</code></p>
+  <p><code>id="success-alert"</code></p>
+  <p><code>id="error-alert"</code></p>
   <p>You can also click on the triggered alert to dismiss it.</p>
 </div>
 
