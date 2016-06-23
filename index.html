@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toast'em</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="toastem.css">
+</head>
+<body>
+  <nav>
+    <div class="title">Toast'em</div>
+  </nav>
+
+<div class="principal">
+  <p>Toast'em is a simple and very basic toast notification tool created with JavaScript and jQuery.</p>
+</div>
+
+<div class="second">
+  <p>Toast'em is based on 3 basic notification: normal, success, and error. Go ahead and click on the buttons below to test the toast system:</p>
+  <div class="buttons">
+    <button class="btn nrm" type="button" name="button" id="normal-alert">Normal Alert</button>
+    <button class="btn scs" type="button" name="button" id="success-alert">Success Alert</button>
+    <button class="btn err" type="button" name="button" id="error-alert">Error Alert</button>
+  </div>
+  <p>Every notification has a fadeout output of 4 seconds after triggered automatically.</p>
+  <h1>How to use?</h1>
+  <p>First, you need jQuery.js and toastem.js scripts in your project.</p>
+  <p><code>&lt;script src="jquery.min.js"&gt;&lt;script&gt;</code></p>
+  <p><code>&lt;script src="toastem.js"&gt;&lt;script&gt;</code></p>
+  <p>Then, you need to set: <code>&lt;div id="toastem"&gt;&lt;/div&gt;</code> to your project. This is where your notifications will render.</p>
+  <p>Next, create a script in your document, depending on which alert you want to use and it's content: <code>&lt;script&gt;toastem.normal_alert("Content of the normal alert").&lt;/script&gt;</code></p>
+  <p>The 3 existing alerts are: </p>
+  <p><code>toastem.normal_alert()</code></p>
+  <p><code>toastem.success_alert()</code></p>
+  <p><code>toastem.error_alert()</code></p>
+  <br>
+  <p>You can also click on the triggered alert to dismiss it.</p>
+</div>
+
+<div id="toastem"></div>
+
+<script src="jquery.min.js"></script>
+<script src="toastem.js"></script>
+
+<script>
+  toastem.normal("Normal Alert");
+  toastem.success("Sucess Alert");
+  toastem.error("Error Alert!");
+</script>
+</body>
+</html>
