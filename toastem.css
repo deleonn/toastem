@@ -1,7 +1,7 @@
 
 #toastem{
   position: fixed;
-  z-index: 999999;
+  z-index: 999;
   top: 12px;
   right: 12px;
 }
