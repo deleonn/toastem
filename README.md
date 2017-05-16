@@ -3,8 +3,8 @@ Toast'em is a simple and very basic toast notification tool created with JavaScr
 How to use?
 First, you need jQuery.js, toastem.js scripts and toastem.css in your project.
 <link href="toastem.css">
-<script src="jquery.min.js"><script>
-<script src="toastem.js"><script>
+<script src="jquery.min.js"></script>
+<script src="toastem.js"></script>
 
 Then, you need to set: <div id="toastem"></div> to your project. This is where your notifications will render.
 
